@@ -12,7 +12,7 @@ class Problem1 {
 
             if (i % 3 == 0 && i % 5 == 0) output.append("WuTang\n");
 
-            else if (i % 3 != 0 && i % 5 != 0) output.append(i + "\n");
+            else if (i % 3 != 0 && i % 5 != 0) output.append(i).append("\n");
         }
         return output.toString();
     }
