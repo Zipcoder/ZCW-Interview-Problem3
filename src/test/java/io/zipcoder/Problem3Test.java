@@ -15,4 +15,13 @@ public class Problem3Test {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void printNumberTest2(){
+        String expected = "WuTang, 1, 2, Wu, 4, Tang, Wu, 7, 8, Wu, Tang, 11, Wu, 13, 14, WuTang, ...";
+
+        String actual = problem1.printNumbers2(15);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
