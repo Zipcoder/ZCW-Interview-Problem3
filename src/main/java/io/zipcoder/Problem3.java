@@ -1,19 +1,22 @@
 package io.zipcoder;
 
+import java.util.ArrayList;
+
 class Problem1 {
     public String wuTang(int n) {
-        StringBuilder output = new StringBuilder();
+
+        ArrayList<String> arrayList = new ArrayList <String>();
 
         for (int i = 1; i <= n; i++) {
 
-            if (i % 3 == 0) output.append("Wu\n");
+            if (i % 3 == 0) arrayList.add("Wu");
 
-            if (i % 5 == 0) output.append("Tang\n");
+            if (i % 5 == 0) arrayList.add("Tang");
 
-            if (i % 3 == 0 && i % 5 == 0) output.append("WuTang\n");
+            if (i % 3 == 0 && i % 5 == 0) arrayList.add("WuTang");
 
-            else if (i % 3 != 0 && i % 5 != 0) output.append(i).append("\n");
+            else if (i % 3 != 0 && i % 5 != 0) arrayList.add(String.valueOf(i));
         }
-        return output.toString();
+        return arrayList.toString();
     }
 }
