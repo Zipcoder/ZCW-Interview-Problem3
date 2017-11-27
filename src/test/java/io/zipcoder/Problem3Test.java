@@ -29,4 +29,12 @@ public class Problem3Test {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testRecursiveWuTang(){
+        Problem3 test = new Problem3();
+        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 8, Wu, Tang, 11, Wu, 13, 14, WuTang";
+        String actual = test.recursiveWuTang(1,15);
+        Assert.assertEquals(expected, actual);
+    }
+
 }

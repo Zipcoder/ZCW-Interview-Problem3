@@ -4,7 +4,10 @@ public class Problem3 {
 
     public static void main(String[] args){
         Problem3 test = new Problem3();
+        System.out.println("Iterative:");
         System.out.println(test.wuTangCounting(50));
+        System.out.println("\nRecursive");
+        System.out.println(test.recursiveWuTang(1,50));
     }
 
     public String wuOrTang(int n){
@@ -21,6 +24,27 @@ public class Problem3 {
         }
 
         return returnMe;
+    }
+
+    public String recursiveWuTang(int start, int n){
+        if (start>n){
+            return "";
+        }
+        String returnMe="";
+        if (start%3==0){
+            returnMe+="Wu";
+        }
+        if (start%5==0){
+            returnMe+="Tang";
+        }
+        if (start%3!=0 && start%5!=0){
+            returnMe+=""+start;
+        }
+        if (start==n){
+            return returnMe;
+        }
+
+        return returnMe+(", "+recursiveWuTang(start+1, n));
     }
 
     public String wuTangCounting(int n){
