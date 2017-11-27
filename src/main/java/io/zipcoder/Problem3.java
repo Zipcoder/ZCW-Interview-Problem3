@@ -7,7 +7,7 @@ public class Problem3 {
         System.out.println(test.wuTangCounting(50));
     }
 
-    public String multPrint(int n){
+    public String wuOrTang(int n){
 
         String returnMe="";
         if (n%3==0){
@@ -26,9 +26,9 @@ public class Problem3 {
     public String wuTangCounting(int n){
         StringBuilder output = new StringBuilder();
         for (int i=1; i<n; i++){
-            output.append(multPrint(i)+", ");
+            output.append(wuOrTang(i)+", ");
         }
-        output.append(multPrint(n));
+        output.append(wuOrTang(n));
         return(output.toString());
     }
 

@@ -5,18 +5,18 @@ import org.junit.Test;
 
 public class Problem3Test {
     @Test
-    public void testMultPrint(){
+    public void testWuOrTang(){
         Problem3 test=new Problem3();
         String expected = "Wu";
-        String actual = test.multPrint(3);
+        String actual = test.wuOrTang(3);
         Assert.assertEquals(expected, actual);
 
         expected = "Tang";
-        actual = test.multPrint(5);
+        actual = test.wuOrTang(5);
         Assert.assertEquals(expected, actual);
 
         expected = "WuTang";
-        actual = test.multPrint(15);
+        actual = test.wuOrTang(15);
         Assert.assertEquals(expected, actual);
 
     }
