@@ -21,12 +21,9 @@ public class Problem3 {
                 toAdd += "Tang";
             }
             if(toAdd.equals("")) {
-                entries.add(String.valueOf(i));
+                toAdd += i;
             }
-            else {
-                entries.add(toAdd);
-            }
-
+            entries.add(toAdd);
         }
         return arrayListToString(entries);
     }
