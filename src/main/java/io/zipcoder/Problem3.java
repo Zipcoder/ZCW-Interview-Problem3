@@ -8,17 +8,14 @@ public class Problem3 {
 
         StringJoiner output = new StringJoiner(", ");
 
-        for(Integer i = 1; i <= n; i ++) {
-            if(i % 3 == 0 && i % 5 == 0) {
+        for (Integer i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
                 output.add("WuTang");
-            }
-            else if (i % 3 == 0) {
+            } else if (i % 3 == 0) {
                 output.add("Wu");
-            }
-            else if(i % 5 == 0) {
+            } else if (i % 5 == 0) {
                 output.add("Tang");
-            }
-            else {
+            } else {
                 output.add(i.toString());
             }
         }
