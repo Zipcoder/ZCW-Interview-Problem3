@@ -1,11 +1,18 @@
 package io.zipcoder;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class Problem3Test {
-    Problem3 problem3 = new Problem3();
-    int number = 15;
+    private Problem3 problem3;
+    private int number;
+
+    @Before
+    public void setUp(){
+        problem3 = new Problem3();
+        number = 15;
+    }
 
     @Test
     public void wuTangMultiplesTest(){
